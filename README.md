@@ -43,7 +43,7 @@ showNotificationsQueue = 1; // Show notification queue count in bottom left corn
 	* Added key press toggle which expands/shrinks the control elements out to show more/less information (inspired by BIS_fnc_advHint)
 	* Added RscStructuredText styling support for title
 	* Added option to pass arguments directly to the function
-	* Add text which shows total number of notifications in the queue
+	* Added text which shows total number of notifications in the queue
 * 0.1
 	* Initital release
 
