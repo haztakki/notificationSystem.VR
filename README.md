@@ -33,13 +33,13 @@ positionOnScreen = "LEFT"; // Where to position notifications on the screen - "L
 ## Changelog
 
 * 0.2
-		* Added customisable config options
-		* Added key press toggle which expands/shrinks the control elements out to show more/less information (inspired by BIS_fnc_advHint)
-		* Added RscStructuredText styling support for title
-		* Added option to pass arguments directly to the function
-		* Add text which shows total number of notifications in the queue
+	* Added customisable config options
+	* Added key press toggle which expands/shrinks the control elements out to show more/less information (inspired by BIS_fnc_advHint)
+	* Added RscStructuredText styling support for title
+	* Added option to pass arguments directly to the function
+	* Add text which shows total number of notifications in the queue
 * 0.1
-    * Initital release
+	* Initital release
 
 ## Known issues
 
