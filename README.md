@@ -1,7 +1,6 @@
 # Notification System for ArmA III
 
-![](https://i.imgur.com/noOEuVN.jpg)
-![](https://i.imgur.com/7Jgnd2A.jpg)
+![](https://i.imgur.com/ZBVeGta.jpg)
 
 ## Installation
 
