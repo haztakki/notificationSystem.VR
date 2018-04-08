@@ -57,13 +57,9 @@ Haz
 
 ## Contributors
 
-```
-Sa-Matra
+Sa-Matra__
 Thank you to everyone who provided suggestions, bug-reports and overall feedback!
-```
 
 ## Notes
 
-```
 If you change values in config_master then you may need to reload the mission (not just restart). Please do not remove my name from file(s) - Give credit where due!
-```
