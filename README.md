@@ -57,6 +57,7 @@ Haz
 
 ## Contributors
 
+Sa-Matra
 Thank you to everyone who provided suggestions, bug-reports and overall feedback!
 
 ## Notes
