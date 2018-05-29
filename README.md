@@ -62,8 +62,8 @@ Haz
 
 ## Contributors
 
-Thank you to everyone who provided suggestions, bug-reports and overall feedback!
-Sa-Matra
+Thank you to everyone who provided suggestions, bug-reports and overall feedback!<br>
+Sa-Matra<br>
 AZCoder - Load save fix
 
 ## Notes
