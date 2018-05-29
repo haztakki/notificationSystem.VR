@@ -24,7 +24,7 @@ _display = uiNamespace getVariable ["disp_notifications", findDisplay 46];
 
 expanded = false;
 
-if (SCREEN_POS isEqualTo "LEFT" && EXPAND_SHRINK_TOGGLE isEqualTo 1) then
+if (EXPAND_SHRINK_TOGGLE isEqualTo 1) then
 {
 	expandKeyEH = (findDisplay 46) displayAddEventHandler ["KeyDown",
 	{
@@ -39,7 +39,7 @@ if (SCREEN_POS isEqualTo "LEFT" && EXPAND_SHRINK_TOGGLE isEqualTo 1) then
 					(0.425 / 2) * safezoneW
 				} else
 				{
-					// ??? TODO
+					-(0.425 / 2) / safezoneW
 				}
 			} else
 			{
@@ -48,14 +48,17 @@ if (SCREEN_POS isEqualTo "LEFT" && EXPAND_SHRINK_TOGGLE isEqualTo 1) then
 					(0.2125 * 2) * safezoneW
 				} else
 				{
-					// ??? TODO
+					0.2125 * safezoneW
 				}
 			};
 			{
-				_position = ctrlPosition _x;
-				_position set [2, _posW];
-				_x ctrlSetPosition _position;
-				_x ctrlCommit 0.75;
+				if (ctrlCommitted _x) then
+				{
+					_position = ctrlPosition _x;
+					_position set [2, _posW];
+					_x ctrlSetPosition _position;
+					_x ctrlCommit 0.4;
+				};
 			} forEach (allControls _display);
 			true
 		};
@@ -72,7 +75,7 @@ _numNotifications = if (MAX_SHOWN_NOTIFICATIONS > 4) then {3} else {MAX_SHOWN_NO
 
 if (SHOW_QUEUE_COUNT isEqualTo 1) then
 {
-	(_display displayCtrl 10) ctrlSetText format [localize "STR_notification_queueCount", notificationsIndex];
+	(_display displayCtrl 10) ctrlSetText format [localize "STR_notification_queueCount", if (notificationsIndex > MAX_SHOWN_NOTIFICATIONS) then {(notificationsIndex - MAX_SHOWN_NOTIFICATIONS)} else {0}];
 };
 
 waitUntil {_myIndex - notificationsHiddenIndex < _numNotifications};
@@ -144,3 +147,8 @@ sleep 1;
 } forEach _controls;
 
 notificationsHiddenIndex = notificationsHiddenIndex + 1;
+
+if (SHOW_QUEUE_COUNT isEqualTo 1) then
+{
+	(_display displayCtrl 10) ctrlSetText format [localize "STR_notification_queueCount", if (notificationsIndex > MAX_SHOWN_NOTIFICATIONS) then {(notificationsIndex - MAX_SHOWN_NOTIFICATIONS) - 1} else {0}];
+};

@@ -32,18 +32,23 @@ defaultTitleTextColour[] = {1, 1, 1, 1}; // Default title text colour (used if y
 defaultTitleBgColour[] = {"(profileNamespace getVariable ['GUI_BCG_RGB_R', 0.13])", "(profileNamespace getVariable ['GUI_BCG_RGB_G', 0.54])", "(profileNamespace getVariable ['GUI_BCG_RGB_B', 0.21])", 1}; // Default title text colour (used if you don't pass custom argument to function)
 maxNotificationsOnScreen = 4; // Maximum number of notifications to show on screen at once (4 is the currently the max - if you try to set higher then it will revert to 3)
 positionOnScreen = "LEFT"; // Where to position notifications on the screen - "LEFT" or "RIGHT"
-expandShrinkToggle = 0; // Enable player to expand/shrink notifications
+expandShrinkToggle = 1; // Enable player to expand/shrink notifications
 showNotificationsQueue = 1; // Show notification queue count in bottom left corner of screen
 ```
 
 ## Changelog
 
+* 0.3
+	* Added load save fix (thanks AZCoder)
+	* Added functionality for the inactive customisable config options that were added last version (for example: positionOnScreen)
+	* Fixed the bug with the key press toggle (expand/shrink control elements)
+	* Fixed queue counter
 * 0.2
 	* Added customisable config options
 	* Added key press toggle which expands/shrinks the control elements out to show more/less information (inspired by BIS_fnc_advHint)
 	* Added RscStructuredText styling support for title
 	* Added option to pass arguments directly to the function
-	* Added text which shows total number of notifications in the queue
+	* Add text which shows total number of notifications in the queue
 * 0.1
 	* Initital release
 
@@ -57,8 +62,9 @@ Haz
 
 ## Contributors
 
-Sa-Matra<br>
 Thank you to everyone who provided suggestions, bug-reports and overall feedback!
+Sa-Matra
+AZCoder - Load save fix
 
 ## Notes
 
