@@ -58,7 +58,7 @@ showNotificationsQueue = 1; // Show notification queue count in bottom left corn
 
 ## Known issues
 
-* Key press toggle - Issue: https://youtu.be/-J8_dImuIXk
+* None known
 
 ## Credits
 
