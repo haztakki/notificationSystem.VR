@@ -28,33 +28,24 @@ if (EXPAND_SHRINK_TOGGLE isEqualTo 1) then
 {
 	expandKeyEH = (findDisplay 46) displayAddEventHandler ["KeyDown",
 	{
-		if (param [1] == (actionKeys "help" select 0)) then
+		_toggleKey = if (isText EXPAND_SHRINK_KEY) then {actionKeys (getText EXPAND_SHRINK_KEY) select 0} else {getNumber EXPAND_SHRINK_KEY};
+		if (param [1] isEqualTo _toggleKey) then
 		{
 			_display = uiNamespace getVariable "disp_notifications";
-			if (!expanded) then {expanded = true} else {expanded = false;};
-			_posW = if (expanded) then
+			_posX = if (SCREEN_POS isEqualTo "LEFT") then {0.0125 * safezoneW + safezoneX} else {0.5625 * safezoneW + safezoneX};
+			_posW = if (SCREEN_POS isEqualTo "LEFT") then {0.2125 * safezoneW} else {0.425 * safezoneW};
+			if (!expanded) then {expanded = true;} else {expanded = false;};
+			if (!expanded) then
 			{
-				if (SCREEN_POS isEqualTo "LEFT") then
-				{
-					(0.425 / 2) * safezoneW
-				} else
-				{
-					-(0.425 / 2) / safezoneW
-				}
-			} else
-			{
-				if (SCREEN_POS isEqualTo "LEFT") then
-				{
-					(0.2125 * 2) * safezoneW
-				} else
-				{
-					0.2125 * safezoneW
-				}
+				_posX = if (SCREEN_POS isEqualTo "LEFT") then {0.0125 * safezoneW + safezoneX} else {0.775 * safezoneW + safezoneX};
+				_posW = if (SCREEN_POS isEqualTo "LEFT") then {0.425 * safezoneW} else {0.2125 * safezoneW};
 			};
+			hintSilent format [":: %1", _posX, _posW];
 			{
 				if (ctrlCommitted _x) then
 				{
 					_position = ctrlPosition _x;
+					_position set [0, _posX];
 					_position set [2, _posW];
 					_x ctrlSetPosition _position;
 					_x ctrlCommit 0.4;
@@ -82,7 +73,7 @@ waitUntil {_myIndex - notificationsHiddenIndex < _numNotifications};
 
 _position = _myIndex % _numNotifications;
 
-_safeZoneX = if (SCREEN_POS isEqualTo "LEFT") then {(-1 * safezoneW + safezoneX)} else {(2 * safezoneW + safezoneX)};;
+_safeZoneX = if (SCREEN_POS isEqualTo "LEFT") then {0.0125 * safezoneW + safezoneX} else {0.5625 * safezoneW + safezoneX};
 
 _title = _display ctrlCreate ["RscStructuredText", 10];
 _title ctrlSetPosition
@@ -123,7 +114,7 @@ _controls = [_title, _background, _notification];
 
 {
 	_position = ctrlPosition _x;
-	_posX = if (SCREEN_POS isEqualTo "LEFT") then {(0.0125 * safezoneW + safezoneX)} else {(0.775 * safezoneW + safezoneX)};
+	_posX = if (SCREEN_POS isEqualTo "LEFT") then {0.0125 * safezoneW + safezoneX} else {0.775 * safezoneW + safezoneX};
 	_position set [0, _posX];
 	_x ctrlSetPosition _position;
 	_x ctrlCommit 1;

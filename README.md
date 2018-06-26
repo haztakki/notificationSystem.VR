@@ -38,6 +38,10 @@ showNotificationsQueue = 1; // Show notification queue count in bottom left corn
 
 ## Changelog
 
+* 0.3.1
+	* Fixed expand/shrink positioning when using RIGHT config option (thanks to Tankbuster for reporting)
+	* Added config option for expand/shrink key
+	* Minor code tweaks
 * 0.3
 	* Added load save fix (thanks AZCoder)
 	* Added functionality for the inactive customisable config options that were added last version (for example: positionOnScreen)
@@ -65,7 +69,13 @@ Haz
 Thank you to everyone who provided suggestions, bug-reports and overall feedback!<br>
 Sa-Matra<br>
 AZCoder - Load save fix
+Tankbuster - Bug report
 
 ## Notes
 
 If you change values in config_master then you may need to reload the mission (not just restart). Please do not remove my name from file(s) - Give credit where due!
+
+## Useful information
+
+https://community.bistudio.com/wiki/DIK_KeyCodes
+https://community.bistudio.com/wiki/Category:Key_Actions

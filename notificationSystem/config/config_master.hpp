@@ -12,5 +12,6 @@ class config_master
 	maxNotificationsOnScreen = 4; // Maximum number of notifications to show on screen at once (4 is the currently the max - if you try to set higher then it will revert to 3)
 	positionOnScreen = "RIGHT"; // Where to position notifications on the screen - "LEFT" or "RIGHT"
 	expandShrinkToggle = 1; // Enable player to expand/shrink notifications
+	expandShrinkKey = "help"; // The key which is used to expand/shrink notifications - https://community.bistudio.com/wiki/DIK_KeyCodes (you can also use action key names: https://community.bistudio.com/wiki/Category:Key_Actions)
 	showNotificationsQueue = 1; // Show notification queue count in bottom left corner of screen
 };

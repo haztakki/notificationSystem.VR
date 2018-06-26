@@ -8,4 +8,5 @@
 #define MAX_SHOWN_NOTIFICATIONS getNumber (getMissionConfig "notificationSystem" >> "config_master" >> "maxNotificationsOnScreen")
 #define SCREEN_POS getText (getMissionConfig "notificationSystem" >> "config_master" >> "positionOnScreen")
 #define EXPAND_SHRINK_TOGGLE getNumber (getMissionConfig "notificationSystem" >> "config_master" >> "expandShrinkToggle")
+#define EXPAND_SHRINK_KEY (getMissionConfig "notificationSystem" >> "config_master" >> "expandShrinkKey")
 #define SHOW_QUEUE_COUNT getNumber (getMissionConfig "notificationSystem" >> "config_master" >> "showNotificationsQueue")
