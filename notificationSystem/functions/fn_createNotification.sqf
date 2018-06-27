@@ -40,7 +40,6 @@ if (EXPAND_SHRINK_TOGGLE isEqualTo 1) then
 				_posX = if (SCREEN_POS isEqualTo "LEFT") then {0.0125 * safezoneW + safezoneX} else {0.775 * safezoneW + safezoneX};
 				_posW = if (SCREEN_POS isEqualTo "LEFT") then {0.425 * safezoneW} else {0.2125 * safezoneW};
 			};
-			hintSilent format [":: %1", _posX, _posW];
 			{
 				if (ctrlCommitted _x) then
 				{
@@ -73,7 +72,7 @@ waitUntil {_myIndex - notificationsHiddenIndex < _numNotifications};
 
 _position = _myIndex % _numNotifications;
 
-_safeZoneX = if (SCREEN_POS isEqualTo "LEFT") then {0.0125 * safezoneW + safezoneX} else {0.5625 * safezoneW + safezoneX};
+_safeZoneX = if (SCREEN_POS isEqualTo "LEFT") then {(-1 * safezoneW + safezoneX)} else {(2 * safezoneW + safezoneX)};
 
 _title = _display ctrlCreate ["RscStructuredText", 10];
 _title ctrlSetPosition
@@ -123,6 +122,10 @@ _controls = [_title, _background, _notification];
 sleep 7;
 
 waitUntil {_myIndex - notificationsHiddenIndex == 0};
+
+_sleep = if (expanded) then {5} else {1};
+
+sleep EXPAND_DISPLAY_TIME;
 
 {
 	_position = ctrlPosition _x;

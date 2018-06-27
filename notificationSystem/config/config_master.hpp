@@ -13,5 +13,6 @@ class config_master
 	positionOnScreen = "RIGHT"; // Where to position notifications on the screen - "LEFT" or "RIGHT"
 	expandShrinkToggle = 1; // Enable player to expand/shrink notifications
 	expandShrinkKey = "help"; // The key which is used to expand/shrink notifications - https://community.bistudio.com/wiki/DIK_KeyCodes (you can also use action key names: https://community.bistudio.com/wiki/Category:Key_Actions)
+	expandDisplayTime = 5; // How much longer the notification displays for when expanded
 	showNotificationsQueue = 1; // Show notification queue count in bottom left corner of screen
 };
