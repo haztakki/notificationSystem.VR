@@ -74,7 +74,7 @@ Haz
 
 Thank you to everyone who provided suggestions, bug-reports and overall feedback!<br>
 Sa-Matra<br>
-AZCoder - Load save fix
+AZCoder - Load save fix<br>
 Tankbuster - Bug report
 
 ## Notes
