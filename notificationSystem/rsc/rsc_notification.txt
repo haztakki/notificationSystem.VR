@@ -1,0 +1,19 @@
+$[
+	1.063,
+	["rsc_notifications",[["0.5","0.5",0,0],"2.5 * pixelW * pixelGrid","2.5 * pixelH * pixelGrid","UI_GRID"],0,0,0],
+	[1200,"",[2,"#(argb,8,8,3)color(1,1,1,1)",["-23.5 * UI_GRID_W + UI_GRID_X","-8.6 * UI_GRID_H + UI_GRID_Y","12 * UI_GRID_W","1 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1201,"",[2,"#(argb,8,8,3)color(0,0,0,0.8)",["-23.5 * UI_GRID_W + UI_GRID_X","-7.5 * UI_GRID_H + UI_GRID_Y","12 * UI_GRID_W","4.5 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+
+$[
+	1.063,
+	["rsc_notifications",[["safeZoneX","0.5",0,0],"2.5 * pixelW * pixelGrid","2.5 * pixelH * pixelGrid","UI_GRID"],0,0,0],
+	[1200,"",[2,"#(argb,8,8,3)color(1,1,1,1)",["1 * UI_GRID_W + UI_GRID_X","-5.6 * UI_GRID_H + UI_GRID_Y","10 * UI_GRID_W","1 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1201,"",[2,"#(argb,8,8,3)color(0,0,0,0.8)",["1 * UI_GRID_W + UI_GRID_X","-4.5 * UI_GRID_H + UI_GRID_Y","10 * UI_GRID_W","4 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1202,"",[2,"#(argb,8,8,3)color(1,1,1,1)",["1 * UI_GRID_W + UI_GRID_X","0.5 * UI_GRID_H + UI_GRID_Y","10 * UI_GRID_W","1 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1203,"",[2,"#(argb,8,8,3)color(0,0,0,0.8)",["1 * UI_GRID_W + UI_GRID_X","1.6 * UI_GRID_H + UI_GRID_Y","10 * UI_GRID_W","4 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1204,"",[2,"#(argb,8,8,3)color(1,1,1,1)",["1 * UI_GRID_W + UI_GRID_X","6.6 * UI_GRID_H + UI_GRID_Y","10 * UI_GRID_W","1 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1205,"",[2,"#(argb,8,8,3)color(0,0,0,0.8)",["1 * UI_GRID_W + UI_GRID_X","7.7 * UI_GRID_H + UI_GRID_Y","10 * UI_GRID_W","4 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1206,"",[2,"#(argb,8,8,3)color(1,1,1,1)",["1 * UI_GRID_W + UI_GRID_X","-11.7 * UI_GRID_H + UI_GRID_Y","10 * UI_GRID_W","1 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1207,"",[2,"#(argb,8,8,3)color(0,0,0,0.8)",["1 * UI_GRID_W + UI_GRID_X","-10.6 * UI_GRID_H + UI_GRID_Y","10 * UI_GRID_W","4 * UI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
